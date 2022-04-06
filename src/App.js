@@ -1,4 +1,6 @@
 import logo from "./logo.svg";
+import Navbar from "./navbar";
+import Home from "./home";
 
 // Add styles to your component
 import "./App.css";
@@ -14,6 +16,9 @@ function App() {
     <div className="App">
       <div className="content">
         <h1>Blog App created by {title} </h1>
+
+        <Home />
+        <Navbar />
         <p>{10}</p>
         <p>{"hello, guys"}</p>
         <p>The picture had {likes} likes in total.</p>
