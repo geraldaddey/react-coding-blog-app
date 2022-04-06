@@ -14,12 +14,12 @@ function App() {
     <div className="App">
       <div className="content">
         <h1>Blog App created by {title} </h1>
-        <p className="footer">Gerald Addey</p>
         <p>{10}</p>
         <p>{"hello, guys"}</p>
         <p>The picture had {likes} likes in total.</p>
         <p>{Math.random() * 10}</p>
         <a href={link}> Google Home Page</a>
+        <p className="footer">Gerald Addey</p>
       </div>
     </div>
   );

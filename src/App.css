@@ -31,9 +31,9 @@
 .footer {
   opacity: 0.6;
   font-family: "outfit";
-  position: absolute;
-  bottom: 0.1rem;
-  right: 22rem;
+  /* position: absolute; */
+  /* bottom: 0.1rem; */
+  /* right: 22rem; */
 }
 
 @keyframes App-logo-spin {

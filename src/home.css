@@ -1,4 +1,34 @@
 .home {
   text-align: center;
-  color: rgb(128, 11, 11);
+  font-family: "outfit", sans-serif;
+}
+
+.home h1 {
+  color: red;
+}
+
+.home p {
+  color: black;
+}
+
+.box {
+  display: flex;
+  background-color: seashell;
+  padding: 1rem;
+  width: 400px;
+  height: 400px;
+  margin: 2rem auto;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid rgb(181, 175, 175);
+  box-shadow: 2px 2px 4px 1px rgb(56, 56, 56);
+  /* text-align: center; */
+
+  /* line-height: 5rem; */
+  /* justify-content: center; */
+}
+
+.box > p {
+  justify-content: center;
+  align-items: center;
 }
