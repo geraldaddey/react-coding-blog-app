@@ -32,3 +32,37 @@
   justify-content: center;
   align-items: center;
 }
+
+.links {
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+  padding: 2rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  background-color: deeppink;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.content > p {
+  color: deeppink;
+  font-weight: normal;
+  font-size: 3rem;
+  display: flex;
+  width: fit-content;
+  padding: 1rem;
+  background-color: black;
+  justify-content: start;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
