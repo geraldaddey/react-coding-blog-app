@@ -56,10 +56,19 @@
   display: flex;
   width: fit-content;
   padding: 1rem;
-  background-color: black;
-  align-items: center;
+  /* background-color: black; */
+  align-items: flex-start;
   margin: 1rem auto;
   border-radius: 10px;
+}
+
+button {
+  background: black;
+  color: white;
+  border-radius: 15px;
+  padding: 1rem;
+  border: none;
+  margin: 0 5px;
 }
 
 .footer {

@@ -9,6 +9,14 @@ function App() {
   // const likes = 50;
   const link = "http://www.google.com";
 
+  const handleClick = () => {
+    console.log(title);
+  };
+
+  const handleClickAgain = (name) => {
+    console.log("new name is " + title + " " + name);
+  };
+
   return (
     <div className="App">
       <div className="content">
@@ -19,6 +27,11 @@ function App() {
           <a href="/create">New Blog</a>
           <a href={link}>About Us</a>
         </div>
+
+        <button onClick={handleClick}>Click Me</button>
+        <button onClick={() => handleClickAgain("mario")}>
+          Click ME AGAIN
+        </button>
 
         <div className="footer"> {title} </div>
       </div>
