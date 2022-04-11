@@ -35,7 +35,7 @@
 
 .links {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   margin-left: auto;
   padding: 2rem;
 }
@@ -46,6 +46,7 @@
   background-color: deeppink;
   border-radius: 10px;
   padding: 1rem;
+  margin-left: 1rem;
 }
 
 .content > p {
@@ -56,8 +57,8 @@
   width: fit-content;
   padding: 1rem;
   background-color: black;
-  justify-content: start;
-  margin-left: 1rem;
+  align-items: center;
+  margin: 1rem auto;
   border-radius: 10px;
 }
 
