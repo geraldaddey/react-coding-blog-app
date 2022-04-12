@@ -1,6 +1,7 @@
 // Add styles to your component
 import "./App.css";
 import "./home.css";
+import Home from "./home";
 
 function App() {
   // We  can declare any variable here and use it in the JSX
@@ -19,6 +20,8 @@ function App() {
 
   return (
     <div className="App">
+      <Home />
+
       <div className="content">
         <p>Food Blog</p>
 
