@@ -2,6 +2,7 @@
 import "./App.css";
 import "./home.css";
 import Home from "./home";
+import Blog from "./Blog";
 
 function App() {
   // We  can declare any variable here and use it in the JSX
@@ -20,7 +21,8 @@ function App() {
 
   return (
     <div className="App">
-      <Home />
+      {/* <Home /> */}
+      <Blog />
 
       <div className="content">
         <p>Food Blog</p>
