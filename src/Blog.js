@@ -20,7 +20,7 @@ const Blog = () => {
       auhtor: "Quansah",
     },
   ]);
-  return <BlogList blogs={blogs} />;
+  return <BlogList blogs={blogs} title="Gerald's Books" />;
 };
 
 export default Blog;
