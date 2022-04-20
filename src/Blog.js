@@ -7,20 +7,29 @@ const Blog = () => {
     {
       title: "My new website",
       body: "Lorem ipsum dolor sit amet",
-      auhtor: "Gerald",
+      author: "Gerald",
     },
     {
       title: "My new book",
       body: "Lorem ipsum dolor sit amet",
-      auhtor: "Kweku",
+      author: "Kweku",
     },
     {
       title: "My new web3 roadmap",
       body: "Lorem ipsum dolor sit amet",
-      auhtor: "Quansah",
+      author: "Quansah",
     },
   ]);
-  return <BlogList blogs={blogs} />;
+
+  return (
+    <div className="blog-home">
+      <BlogList blogs={blogs} />;
+      <BlogList
+        blogs={blogs.filter((blog) => blog.author === "Gerald")}
+        title="Gerald's Blogs"
+      />
+    </div>
+  );
 };
 
 export default Blog;
