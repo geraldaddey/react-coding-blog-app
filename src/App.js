@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Home /> */}
+      <Home />
       <Blog />
 
       <div className="content">

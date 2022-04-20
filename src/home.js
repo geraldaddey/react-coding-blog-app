@@ -2,7 +2,6 @@ import "./home.css";
 import { useState } from "react";
 
 function Home() {
-  const homeName = "Addey";
   const firstChild = "Ronald";
   const secondChild = "Gerald";
 
