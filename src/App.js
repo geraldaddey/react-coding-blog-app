@@ -21,10 +21,10 @@ function App() {
 
   return (
     <div className="App">
-      <Home />
+      {/* <Home /> */}
       <Blog />
 
-      <div className="content">
+      {/* <div className="content">
         <p>Food Blog</p>
 
         <div className="links">
@@ -39,7 +39,7 @@ function App() {
         </button>
 
         <div className="footer"> {title} </div>
-      </div>
+      </div> */}
     </div>
   );
 }
