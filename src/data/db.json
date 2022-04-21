@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "My new website",
+      "body": "Lorem ipsum dolor sit amet",
+      "author": "Gerald",
+      "id": 1
+    },
+    {
+      "title": "My new book",
+      "body": "Lorem ipsum dolor sit amet",
+      "author": "Kweku",
+      "id": 2
+    },
+    {
+      "title": "My new web3 roadmap",
+      "body": "Lorem ipsum dolor sit amet",
+      "author": "Quansah",
+      "id": 3
+    }
+  ]
+}
