@@ -48,8 +48,7 @@
   padding: 1rem;
   margin-left: 1rem;
 }
-
-.content > p {
+p {
   color: deeppink;
   font-weight: normal;
   font-size: 3rem;
