@@ -1,52 +1,21 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
-import "./home.css";
 
 const Blog = () => {
-  const [blogs, setBlogs] = useState([
-    {
-      title: "My new website",
-      body: "Lorem ipsum dolor sit amet",
-      author: "Author: Gerald",
-      id: 1,
-    },
-    {
-      title: "My new book",
-      body: "Lorem ipsum dolor sit amet",
-      author: "Author: Gerald",
-      id: 2,
-    },
-    {
-      title: "My new web3 roadmap",
-      body: "Lorem ipsum dolor sit amet",
-      author: "Author: Quansah",
-      id: 3,
-    },
-  ]);
-
-  const [name, setName] = useState("mario");
-
-  const handleDelete = (id) => {
-    const newBlogs = blogs.filter((blog) => blog.id !== id);
-    setBlogs(newBlogs);
-  };
+  const [blogs, setBlogs] = useState(null);
 
   useEffect(() => {
-    console.log("use effect ran");
-    console.log(name);
-  }, [name]);
+    fetch("http://localhost:8000/blogs")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setBlogs(data);
+      });
+  }, []);
 
   return (
-    <div className="blog-home">
-      <h2 style={{ color: "red" }}>Blog List Using React</h2>
-      <BlogList blogs={blogs} handleDelete={handleDelete} />
-      <p>{name}</p>
-      <button onClick={() => setName("Gerald")}>Change Name</button>
-      {/* <BlogList
-        blogs={blogs.filter((blog) => blog.author === "Gerald")}
-        title="Gerald's Blogs"
-      /> */}
-    </div>
+    <div className="blog-preview">{blogs && <BlogList blogs={blogs} />}</div>
   );
 };
 
