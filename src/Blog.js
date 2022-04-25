@@ -1,34 +1,14 @@
 import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 import "./home.css";
+import useFetch from "./useFetch";
 
 const Blog = () => {
-  const [blogs, setBlogs] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    setTimeout(() => {
-      fetch("http://localhost:8000/blogs")
-        .then((res) => {
-          if (!res.ok) {
-            // error coming back from server
-            throw Error("could not fetch the data for that resource");
-          }
-          return res.json();
-        })
-        .then((data) => {
-          setIsLoading(false);
-          setBlogs(data);
-          setError(null);
-        })
-        .catch((err) => {
-          // auto catches network / connection error
-          setIsLoading(false);
-          setError(err.message);
-        });
-    }, 1000);
-  }, []);
+  const {
+    data: blogs,
+    isLoading,
+    error,
+  } = useFetch("http://localhost:8000/blogs");
 
   return (
     <div className="blog-preview">
