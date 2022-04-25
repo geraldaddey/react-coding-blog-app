@@ -1,30 +1,24 @@
 // Add styles to your component
 import "./App.css";
 import "./home.css";
-import Home from "./home";
+
 import Blog from "./Blog";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./navbar";
+import Create from "./Create";
 
 function App() {
-  // const link = "http://www.google.com";
-
-  // const handleClick = () => {
-  //   console.log(title);
-  // };
-
-  // const handleClickAgain = (name) => {
-  //   console.log("new name is " + title + " " + name);
-  // };
-
   return (
     <Router>
       <div className="App">
         <Navbar />
         <div className="content">
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Blog />
+            </Route>
+            <Route path="/create">
+              <Create />
             </Route>
           </Switch>
         </div>
