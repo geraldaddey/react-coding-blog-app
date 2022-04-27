@@ -1,11 +1,9 @@
-// Add styles to your component
-import "./App.css";
-import "./home.css";
-
-import Blog from "./Blog";
+import Navbar from "./Navbar";
+import Home from "./Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./navbar";
 import Create from "./Create";
+import "./home.css";
+import Blog from "./Blog";
 
 function App() {
   return (
@@ -17,7 +15,7 @@ function App() {
             <Route exact path="/">
               <Blog />
             </Route>
-            <Route exact path="/create">
+            <Route path="/create">
               <Create />
             </Route>
           </Switch>
@@ -26,7 +24,5 @@ function App() {
     </Router>
   );
 }
-
-// Export component after creating it to be used in externaal   sheets
 
 export default App;
