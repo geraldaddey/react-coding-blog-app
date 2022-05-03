@@ -48,10 +48,29 @@
   padding: 1rem;
   margin-left: 1rem;
 }
+
+.blog-preview > h1:hover {
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+h2 {
+  size: 3rem;
+  font-family: "outfit";
+  padding: 2rem;
+  background-color: beige;
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.41);
+  box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.41);
+}
+
 p {
   color: deeppink;
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 1rem;
   display: flex;
   width: fit-content;
   padding: 1rem;
